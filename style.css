@@ -1,0 +1,212 @@
+/*Restet*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(./img/WhatsApp\ Image\ 2022-05-09\ at\ 6.17.42\ AM\ \(1\).jpeg\ FONDO.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.title{
+    display: flex;
+    color: black;
+    justify-content: center;    
+    
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 20px;
+    background-color: rgb(255, 202, 202); 
+    background-position: sticky;    
+   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.menu_items{
+    background-color: rgb(255, 202, 202);
+    border-radius: 1rem ;
+    padding: 0.3rem;
+}
+
+.hero{
+    display:grid;
+    justify-content: space-around;
+    
+}
+
+.hero_image{
+    width: 65%;
+    height: 65%;
+    justify-content: center;
+    background-size: auto;
+    background-repeat: none;
+    background-position-x: center;  
+  
+}
+
+
+
+.barra{
+    background-color: rgb(204, 204, 235);
+}
+
+.title_2{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.3em;
+    vertical-align: baseline;
+    background: transparent;
+    color: black;
+    text-align: center;
+    font: size 13px;    
+    padding: 15px;
+}
+
+.style_atribute{
+    letter-spacing: 0.3em;
+    font-size: 36px;
+    text-align: center;
+}
+ .galeria_1{
+     display: flex;
+    justify-content: space-around;
+ }
+
+.item_1{
+    width: 25%;
+    grid-area: imagen1;
+}
+
+.item_2{
+    width: 25%;
+    grid-area: imagen2
+}
+.item_3{
+    width: 25%;
+    grid-area:imagen3
+}
+
+
+footer{    
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    background: rgb(255, 202, 202);
+
+}
+
+.main-content{
+    display: flex;   
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h4{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0 ;
+}
+ .left .content p{
+     text-align: justify;
+ }
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+    padding:  0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #582626;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover{
+    background: #6b2828;
+}
+
+
+/*ESTILOS DE TIENDA*/
+
+.galeria_tienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: "imagen1"
+                         "imagen2"
+                         "imagen3"
+                         "imagen4"
+                         "imagen5"
+                         "imagen6"
+                         "imagen7"
+                         "imagen8"
+                         "imagen9";
+}
+
+.item-1{
+    width: 70%;
+    grid-area: imagen1;
+}
+.item-2{
+    width: 70%;
+    grid-area: imagen2;
+}
+.item-3{
+    width: 50%;
+    grid-area: imagen3;
+}
+.item-4{
+    width: 70%;
+    grid-area: imagen4;
+}
+.item-5{
+    width: 70%;
+    grid-area: imagen5;
+}
+.item-6{
+    width: 70%;
+    grid-area: imagen6;
+}
+.item-7{
+    width: 50%;
+    grid-area: imagen7;
+}
+.item-8{
+    width: 50%;
+    grid-area: imagen8;
+}
+.item-9{
+    width: 50%;
+    grid-area: imagen9 ;
+}
+
+
+.style_1{
+    letter-spacing: 0.3em;
+    font-size: 36px;
+    text-align: center;
+}
