@@ -85,19 +85,39 @@ body{
 .item_1{
     width: 25%;
     grid-area: imagen1;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
+.item_1:hover{
+    transform: scale(1.04);
+}
 .item_2{
     width: 25%;
     grid-area: imagen2
+    object-fit : cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item_2:hover{
+    transform: scale(1.04);
 }
 .item_3{
     width: 25%;
     grid-area:imagen3
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item_3:hover{
+    transform: scale(1.04);
 }
 
 
-footer{    
+.footer-base{    
+    display: flex;
+   justify-content: flex-end;
     bottom: 0px;
     width: 100%;
     height: 40%;
@@ -107,6 +127,7 @@ footer{
 
 .main-content{
     display: flex;   
+    
 }
 
 .main-content .box{
@@ -232,6 +253,7 @@ footer{
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
+    
 }
 
 .contendor figure .capa{
@@ -239,7 +261,7 @@ footer{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,193, 123,0.4);
+    background: rgba(245, 144, 203, 0.4);
     opacity: 0;
     visibility: hidden;
     text-align: center;
@@ -255,8 +277,63 @@ footer{
 }
 
 .contendor figure .capa{
-    color: #fff;
+    color:rgb(240, 151, 231);
     font-weight: 400;
     margin-bottom: 120px;
     margin-top: 30px;
+}
+    
+
+/*ESTILOS DE OFERTA*/
+
+ .items{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     padding: 30px 20px;
+     grid-column-gap: 20px;
+     grid-row-gap:30px;
+ }
+
+ .item img{
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     cursor: pointer;
+     transition: 0.2s ease;
+ }
+
+ .item img:hover{
+     transform: scale(1.04);
+ }
+
+ .item h4{
+     padding: 5px;
+     text-align: center;
+ }
+ .item button{
+     padding: 5px 30px;
+     border: none;
+     outline: none;
+     background-color: antiquewhite;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+     font-size: 20px;
+     display: block;
+     margin: 0 auto;
+     transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);    
+}
+
+@media screen and (max-width:1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
