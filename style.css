@@ -210,3 +210,53 @@ footer{
     font-size: 36px;
     text-align: center;
 }
+
+.contendor{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contendor{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+
+.contendor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contendor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,193, 123,0.4);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contendor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contendor figure:hover > .capa{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contendor figure .capa{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
