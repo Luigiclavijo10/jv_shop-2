@@ -95,7 +95,7 @@ body{
 }
 .item_2{
     width: 25%;
-    grid-area: imagen2
+    grid-area: imagen2;
     object-fit : cover;
     cursor: pointer;
     transition: 0.2s ease;
@@ -105,7 +105,7 @@ body{
 }
 .item_3{
     width: 25%;
-    grid-area:imagen3
+    grid-area:imagen3;
     object-fit: cover;
     cursor: pointer;
     transition: 0.2s ease;
@@ -191,40 +191,100 @@ body{
 .item-1{
     width: 70%;
     grid-area: imagen1;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+.item-1:hover{
+    transform: scale(1.04);
+}
+
+
 .item-2{
     width: 70%;
     grid-area: imagen2;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+.item-2:hover{
+    transform: scale(1.04);
+}
+
 .item-3{
     width: 50%;
     grid-area: imagen3;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-3:hover{
+    transform: scale(1.04);
 }
 .item-4{
     width: 70%;
     grid-area: imagen4;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-4:hover{
+    transform: scale(1.04);
 }
 .item-5{
     width: 70%;
     grid-area: imagen5;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-5:hover{
+    transform: scale(1.04);
 }
 .item-6{
     width: 70%;
     grid-area: imagen6;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-6:hover{
+    transform: scale(1.04);
 }
 .item-7{
     width: 50%;
     grid-area: imagen7;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-7:hover{
+    transform: scale(1.04);
 }
 .item-8{
     width: 50%;
     grid-area: imagen8;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-8:hover{
+    transform: scale(1.04);
 }
 .item-9{
     width: 50%;
     grid-area: imagen9 ;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item-9:hover{
+    transform: scale(1.04);
 }
 
+
+
+/* ESTILOS*/
 
 .style_1{
     letter-spacing: 0.3em;
@@ -337,3 +397,25 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+/*ESTILO DE ENCUENTRANOS*/
+
+.style_2{
+    letter-spacing: 0.3em;
+    font-size: 36px;
+    text-align: center;
+}
+.container{
+    margin-top: 8%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+ .inner img:hover{
+     transform: scale(1.5);
+ }
